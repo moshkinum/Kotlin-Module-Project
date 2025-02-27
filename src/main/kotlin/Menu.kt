@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 class Menu(
-    val items: MutableList<String>,
+    val items: List<String>,
     val onCreate: () -> Unit,
     val onOpen: (Int) -> Unit,
 ) {

@@ -27,7 +27,7 @@ class ArchiveScreen() {
         println("Создание архива")
         println("------------------------------")
 
-        val name = Helper.inputText(
+        val name = readNonEmptyString(
             "Введите наименование архива:",
             "Наименование архива не должно быть пустым:",
         )

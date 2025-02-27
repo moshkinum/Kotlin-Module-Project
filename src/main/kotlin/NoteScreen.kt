@@ -36,11 +36,11 @@ class NoteScreen(val archive: Archive) {
         println("Создание заметки")
         println("------------------------------")
 
-        val title = Helper.inputText(
+        val title = readNonEmptyString(
             "Введите заголовок заметки:",
             "Заголовок заметки не должен быть пустым:",
         )
-        val text = Helper.inputText(
+        val text = readNonEmptyString(
             "Введите текст заметки:",
             "Текст заметки не должен быть пустым:",
         )
